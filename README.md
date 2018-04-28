@@ -1,2 +1,3 @@
 # didactic-giggle
-Agile Java Exercises
+Web dev bootcamp
+
