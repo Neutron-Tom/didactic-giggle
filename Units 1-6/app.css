@@ -1,0 +1,25 @@
+h1 {
+	color: rgba(20,11,200, 0.6);
+/*	border-color: purple;
+	border-width: 5px;
+	border-style: dotted;*/
+
+	border: 5px dashed rgb(255,100,80);
+}
+/*
+width
+color
+style*/
+
+li {color: rgba(20,11,200, 0.5);
+}
+
+h4 {color: rgba(20,11,200, 0.8);
+	background: rgb(255,100,80);
+}
+
+body{ background: pink;
+/*	background: url(https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0483/4300/rblack_woodgrain_black_preview.png);
+	background-repeat: no-repeat;
+	background-size: cover; */
+}

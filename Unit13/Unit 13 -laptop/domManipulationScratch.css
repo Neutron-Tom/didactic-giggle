@@ -1,0 +1,10 @@
+.highlighter{
+	color:blue;
+	border:10px solid red;
+	background-color: yellow;
+}
+
+.some-class{
+	color: blue;
+	border: 10px solid red;
+}
