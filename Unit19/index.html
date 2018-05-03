@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <title>Circles</title>
     <script type="text/javascript" src="assets/lib/paper-full.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.9/howler.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/circles.css">
     <script type="text/paperscript" canvas="myCanvas">
 
+
+        var sound = new Howl({
+            src: ['assets/sounds/bubbles.mps']
+        });
+
+
+        // Define array of circles
+        var circles = [];
+
         function onKeyDown(event){
+            sound.play();
         var maxPoint = new Point(view.size.width, view.size.height);
         var randomPoint = Point.random();
         var point = maxPoint * randomPoint;
-        new Path.Circle(point, 10).fillColor = 'orange';
+            var newCircle = new Path.Circle(point, 500);
+            newCircle.fillColor = 'orange';
+            circles.push(newCircle);
+
+        }
+
+        function onFrame(event){
+            for(var i=0; i<circles.length; i++){
+                circles[i].fillColor.hue += 1;
+                circles[i].scale(0.9);
+            }
         }
 
     </script>
