@@ -1,3 +1,5 @@
 # didactic-giggle
-Web dev bootcamp
 
+Coursework from a full stack web development bootcamp. 
+
+Mostly Javascript, HTML and CSS
